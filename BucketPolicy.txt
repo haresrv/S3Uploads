@@ -1,0 +1,20 @@
+{
+    "Version": "2012-10-17",
+    "Id": "Policy1565328758775",
+    "Statement": [
+        {
+            "Sid": "Stmt1565328757599",
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": [
+                "s3:AbortMultipartUpload",
+                "s3:DeleteObject",
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:PutObject",
+                "s3:PutObjectAcl"
+            ],
+            "Resource": "arn:aws:s3:::cloud337/*"
+        }
+    ]
+}
